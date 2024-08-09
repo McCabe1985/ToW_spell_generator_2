@@ -1,0 +1,26 @@
+/*
+Colors
+*/
+$primary-text-clr: #333;
+$alt-text-clr: #554122;
+$primary-bg-clr: #e4e0d5;
+$button-bg-clr: #817b6a;
+/*
+Fonts
+*/
+$primary-font: "BriosoPro-Regular", Tahoma;
+$heading-font: "IMFellEnglishSC-Regular", sans-serif;
+
+/*
+Fluid font sizes
+*/
+$smallest-font-size: calc(8px + 0.390625vw);
+$smaller-font-size: calc(12px + 0.390625vw);
+$primary-font-size: calc(15px + 0.390625vw);
+$sub-heading-font-size: calc(20px + 0.5vw);
+$heading-font-size: calc(20px + 2vw);
+
+/*
+Fluid image sizes
+*/
+$fluid-icon-size-lg: calc(32px + 15vh);

@@ -1,0 +1,76 @@
+@use "./variables" as *;
+//flex containers
+@mixin flexContainer($direction) {
+  display: flex;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+/*
+fonts
+*/
+@mixin headingFont($color, $size) {
+  color: $color;
+  font-family: $heading-font;
+  font-size: $size;
+}
+
+@mixin primaryFont($color, $size) {
+  color: $color;
+  font-family: $primary-font;
+  font-size: $size;
+  text-align: left;
+}
+
+/*
+buttons
+*/
+@mixin primaryButton($color, $size, $btn-clr) {
+  @include primaryFont($color, $size);
+  cursor: pointer;
+  background-color: $btn-clr;
+  padding: 0.5em 1.5em;
+  border-radius: 8px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all ease-in-out 0.3s;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $primary-text-clr;
+  }
+}
+
+/*
+Links
+*/
+@mixin primaryLink($color, $size) {
+  text-decoration: none;
+  @include subHeading($color, $size);
+  transition: all 0.3s ease-in-out;
+  &:hover,
+  :focus {
+    cursor: url("../images/crosshair.png"), auto;
+    color: red;
+  }
+  &:active {
+    text-decoration: underline;
+  }
+}
+
+/*
+Parallax Background
+*/
+
+@mixin scrollingBG($Z) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: $Z;
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

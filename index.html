@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Spell Generator | Warhammer: The Old World</title>
+    <link rel="stylesheet" href="./src/styles/styles.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <!--Header Start-->
+      <header>
+        <h1>Warhammer: The Old World</h1>
+        <p>Spell Generator</p>
+      </header>
+        <!--Header End-->
+        
+         <!--Params Form Start-->
+          <form action="">
+            <div>
+              <!--Army Selector-->
+              <div class="input-container">
+                <label for="army-select" class="hidden-label">Army</label>
+                <select name="army-select" id="army-select">
+                  <option value="" selected>Choose your army</option>
+                </select>
+              </div>
+            <!--Wizard Type Selector-->
+            <div class="input-container" >
+              <label for="wizard-select" class="hidden-label">Wizard Type</label>
+              <select name="wizard-select" id="wizard-select">
+                <option value="" selected>Select Wizard Type</option>
+              </select>
+            </div>
+            <!--Wizard Level Selector-->
+            <div class="input-container ">
+              <label for="level-select" class="wizard-level-label">Wizard Level</label>
+              <select name="level-select" id="level-select">
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <!--Lore Selector-->
+            <div class="input-container">
+              <label for="lore-select" class="hidden-label">Lores</label>
+              <select name="lore-select" id="lore-select">
+                <option value="" selected>Select Lore</option>
+              </select>
+            </div>
+            <button id="generate-spells-button">Generate Spells</button>
+          </form>
+          <!--Params Form End-->
+          <!--Replace Spell Form Start-->
+          <form action="">
+            <legend>Replace Spell?</legend>
+            <div class="input-container">
+              <label for="lore-spells" class="hidden-label">Spell to Replace</label>
+              <select name="lore-spells" id="lore-spells">
+                <option value="">Spell to Replace</option>
+              </select>
+            </div>
+            <div class="input-container">
+              <label for="signiature-spells" class="hidden-label">Signiature Spell</label>
+              <select name="signiature-spells" id="signiature-spells">
+                <option value="">Signiature Spell</option>
+              </select>
+            </div>
+            <div class="buttons-wrapper">
+              <button id="replace-spell-button">Replace</button>
+              <button id="reset-spells-button">Reset</button>
+            </div>
+            
+          </form>
+          <!--Replace Spell Form End-->
+        
+  <!--Spell List Start-->
+  <section id="spell-list-container" class="container row-lg"></section>
+  <!--Spell List End-->
+  <!--Download Spells Button-->
+  <button id="download-button">Download Spell List</button>
+ 
+    </div>
+
+    <script type="module"  src="./src/js/app.js"></script>
+  </body>
+</html>

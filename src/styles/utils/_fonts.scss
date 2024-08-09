@@ -1,0 +1,16 @@
+/*@font-face {
+    font-family: 'Anton';
+    src: local('Anton'), url("../fonts/AquilineTwo.ttf") format('truetype');
+}*/
+@font-face {
+  font-family: "BriosoPro-Regular";
+  src: local("BriosoPro-Regular.otf"),
+    url("./fonts/BriosoPro-Regular.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "IMFellEnglishSC-Regular";
+  src: local("IMFellEnglishSC-Regular.ttf"),
+    url("./fonts/IMFellEnglishSC-Regular.ttf") format("truetype");
+  font-display: swap;
+}
